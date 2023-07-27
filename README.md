@@ -1,8 +1,8 @@
-Age Predictor Model
+Vehicle Verifier Model
 
-This model is used to predict peoples ages based on their face. It is trained on an imagenet Resnet-18 model using transfer learning. The idea is that if the model overpredicts your age, you might have some sort of skin problems.
+This model is used to identify different vehicles as a bus, plane, bike, or boat. It is trained on an imagenet Resnet-18 model using transfer learning.
 
-![A computer analyzes a face.](https://imgur.com/HeyVfsW)
+![image](https://github.com/HalenSa/Vehicle-differentiator/assets/140643980/58ccf0f9-c32d-4980-ba03-f8cb3270a4be)
 
 ## The Algorithm
 The algorithim is used by recording a video on a Logitech webcam - supported by Jetson nano. It uses a 2GB Jetson Nano, and so it uses it a preflashed SD card flashed from the NVIDIA webpage. It uses a facenet to find a persons face in the image, then it crops the image to just hold the face. It then sends the face to the transfer learning model. The transfer model then predicts your age. It will try to guess your age to the best of its abilities. Then it will print out the age is it is confident. It is up to the user to interepret the information.
