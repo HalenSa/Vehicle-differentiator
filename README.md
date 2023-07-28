@@ -44,4 +44,4 @@ You can download the dataset with this link: https://www.kaggle.com/datasets/ris
 27. Run the command: imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/(image class)/(image name).jpg (name of output file).jpg
 28. Afterwards you will have your output image with a percentage just below vehicles. Run this command as many times as you want to test the accuracy of the nano and adjust the amount of epochs in the previous step as you wish (make sure to follow every step past the training again after adjusting the epochs)
 
-[View a video explanation here](!(https://www.youtube.com/watch?v=WoQ-ObMadJc)
+![View a video explanation here]((https://www.youtube.com/watch?v=WoQ-ObMadJc)
