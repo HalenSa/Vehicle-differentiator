@@ -2,7 +2,9 @@ Vehicle Verifier Model
 
 This model is used to identify different vehicles as a bus, plane, bike, or boat. It is trained on an imagenet Resnet-18 model using transfer learning.
 
-![image](https://github.com/HalenSa/Vehicle-differentiator/assets/140643980/58ccf0f9-c32d-4980-ba03-f8cb3270a4be)
+![image](https://github.com/HalenSa/Vehicle-differentiator/assets/140643980/58ccf0f9-c32d-4980-ba03-f8cb3270a4be) ![image](https://github.com/HalenSa/Vehicle-differentiator/assets/140643980/2cbb39e5-acb0-4b7b-828e-fc650c887f41) ![image](https://github.com/HalenSa/Vehicle-differentiator/assets/140643980/51654ce7-c965-4b6e-b1fb-5e1ddb247cc0)
+
+
 
 ## The Algorithm
 The algorithim is used by showing an image of one of the four vehicles to the Jetson nano. It uses a 2GB Jetson Nano, and so it uses it a preflashed SD card flashed from the NVIDIA webpage. It identifies the vehicle shown using the references in the dataset with imagenet. Afterwards it will print a percentage of accuracy to the vehicle as the type it identified it as. When running the command imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/(image class)/(image name).jpg (name of output file).jpg an image is returned with the original image of the vehicle along with a percentage of accuracy as shown above.
@@ -38,4 +40,4 @@ You can download the dataset with this link: https://www.kaggle.com/datasets/ris
 27. Run the command: imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/(image class)/(image name).jpg (name of output file).jpg
 28. Afterwards you will have your output image with a percentage just below vehicles. Run this command as many times as you want to test the accuracy of the nano and adjust the amount of epochs in the previous step as you wish (make sure to follow every step past the training again after adjusting the epochs)
 
-[View a video explanation here]([video link](https://www.youtube.com/watch?v=WoQ-ObMadJc)https://www.youtube.com/watch?v=WoQ-ObMadJc)
+[View a video explanation here]((https://www.youtube.com/watch?v=WoQ-ObMadJc)https://www.youtube.com/watch?v=WoQ-ObMadJc)
