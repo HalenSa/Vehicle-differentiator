@@ -3,7 +3,9 @@ Vehicle Verifier Model
 This model is used to identify different vehicles as a bus, plane, bike, or boat. It is trained on an imagenet Resnet-18 model using transfer learning.
 
 ![image](https://github.com/HalenSa/Vehicle-differentiator/assets/140643980/58ccf0f9-c32d-4980-ba03-f8cb3270a4be)
+
 ![image](https://github.com/HalenSa/Vehicle-differentiator/assets/140643980/2cbb39e5-acb0-4b7b-828e-fc650c887f41) 
+
 ![image](https://github.com/HalenSa/Vehicle-differentiator/assets/140643980/51654ce7-c965-4b6e-b1fb-5e1ddb247cc0)
 
 
